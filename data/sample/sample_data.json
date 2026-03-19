@@ -1,0 +1,122 @@
+{
+  "text": {
+    "id": "text_001",
+    "title": "De Exemplo Textuum",
+    "language": "latin",
+    "description": "A sample scholarly text with two witnesses"
+  },
+  "witnesses": [
+    {
+      "id": "witness_A",
+      "siglum": "A",
+      "source": "Manuscript Alpha",
+      "language": "latin",
+      "pages": [
+        {
+          "id": "page_A1",
+          "number": 1,
+          "lines": [
+            {"id": "line_A1_1", "number": 1, "content": "In principio erat verbum"},
+            {"id": "line_A1_2", "number": 2, "content": "et verbum erat apud deum"},
+            {"id": "line_A1_3", "number": 3, "content": "et deus erat verbum"}
+          ]
+        },
+        {
+          "id": "page_A2",
+          "number": 2,
+          "lines": [
+            {"id": "line_A2_1", "number": 1, "content": "hoc erat in principio"},
+            {"id": "line_A2_2", "number": 2, "content": "apud deum omnia per ipsum"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "witness_B",
+      "siglum": "B",
+      "source": "Manuscript Beta",
+      "language": "latin",
+      "pages": [
+        {
+          "id": "page_B1",
+          "number": 1,
+          "lines": [
+            {"id": "line_B1_1", "number": 1, "content": "In principio verbum erat"},
+            {"id": "line_B1_2", "number": 2, "content": "verbum erat apud deum"},
+            {"id": "line_B1_3", "number": 3, "content": "et deus verbum erat"}
+          ]
+        },
+        {
+          "id": "page_B2",
+          "number": 2,
+          "lines": [
+            {"id": "line_B2_1", "number": 1, "content": "hoc in principio erat"},
+            {"id": "line_B2_2", "number": 2, "content": "omnia per ipsum apud deum"}
+          ]
+        }
+      ]
+    }
+  ],
+  "logical_structure": [
+    {
+      "id": "chapter_1",
+      "type": "chapter",
+      "number": 1,
+      "title": "De Verbo",
+      "paragraphs": [
+        {
+          "id": "para_1_1",
+          "number": 1,
+          "sentences": [
+            {
+              "id": "sent_1_1_1",
+              "number": 1,
+              "content": "In principio erat verbum et verbum erat apud deum",
+              "aligns_with": ["line_A1_1", "line_A1_2", "line_B1_1", "line_B1_2"]
+            },
+            {
+              "id": "sent_1_1_2",
+              "number": 2,
+              "content": "et deus erat verbum",
+              "aligns_with": ["line_A1_3", "line_B1_3"]
+            }
+          ]
+        },
+        {
+          "id": "para_1_2",
+          "number": 2,
+          "sentences": [
+            {
+              "id": "sent_1_2_1",
+              "number": 1,
+              "content": "hoc erat in principio apud deum",
+              "aligns_with": ["line_A2_1", "line_B2_1"]
+            },
+            {
+              "id": "sent_1_2_2",
+              "number": 2,
+              "content": "omnia per ipsum apud deum",
+              "aligns_with": ["line_A2_2", "line_B2_2"]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "annotations": [
+    {
+      "id": "anno_001",
+      "target": "sent_1_1_1",
+      "type": "note",
+      "content": "Key theological statement, compare with John 1:1",
+      "author": "Scholar A"
+    },
+    {
+      "id": "anno_002",
+      "target": "line_A1_1",
+      "type": "variant",
+      "content": "Witness B inverts word order: verbum erat instead of erat verbum",
+      "author": "Scholar A"
+    }
+  ]
+}
