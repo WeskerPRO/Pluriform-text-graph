@@ -241,6 +241,6 @@ python -m textlpg.queries
 **Georg-August-Universität Göttingen**
 MSc Applied Data Science — Internship Module
 
-- 📅 Duration: April 1 – June 30, 2026
+- 📅 Duration: April 1 – June 1, 2026
 - 🎯 Topic: Modeling pluriform texts as Labeled Property Graphs
 - 🛠️ Stack: Python, Neo4j, Cypher, MySQL, Ollama (LLM), Streamlit
