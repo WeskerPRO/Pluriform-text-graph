@@ -1,4 +1,4 @@
-# 📖 TextLPG
+# 📖 Pluriform Text Graph
 
 > **Modeling pluriform texts as a Labeled Property Graph**
 
@@ -15,7 +15,7 @@ A graph-based system for storing, querying, and enriching parallel Bible transla
 
 ## 🧠 What Is This?
 
-TextLPG explores how **pluriform texts** — texts that exist in many parallel versions — can be modeled using a **Labeled Property Graph (LPG)**.
+Pluriform Text Graph (PTG) explores how **pluriform texts** — texts that exist in many parallel versions — can be modeled using a **Labeled Property Graph (LPG)**.
 
 The dataset is the **Bible in 64 languages**: ~33,000 verses × 64 translations = **~1.3 million passages**. Each passage is stored as a node in a Neo4j graph, connected to its verse, chapter, book, and language.
 
@@ -75,7 +75,7 @@ No Corpus traversal needed. Direct path: **Verse → Passage → Text**.
 ## 📁 Project Structure
 
 ```
-Textlpg/
+pluriform-text-graph/
 ├── 📄 config.env              ← Neo4j credentials (not in git)
 ├── 📄 requirements.txt        ← Python dependencies
 │
@@ -117,8 +117,8 @@ Textlpg/
 ### 1. Clone & Install
 
 ```bash
-git clone <repo-url>
-cd Textlpg
+git clone https://github.com/WeskerPRO/pluriform-text-graph.git
+cd pluriform-text-graph
 
 python -m venv .venv
 .venv\Scripts\activate        # Windows
